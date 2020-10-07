@@ -3,8 +3,6 @@ layout: post
 title: 2 Hints to Use Lazy Evaluation in Programming
 ---
 
-# 2 Hints to Use Lazy Evaluation in Programming
-
 #### - What:
 1. Used particularly in functional programming languages.
 2. Chances to increase performance by not doing the computation until needed.
