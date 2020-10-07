@@ -59,6 +59,7 @@ so when it's something heavy computation,
 you know it's going to save sometime when it's applicable.
 
 * ##### Deadlock : [To-Do] Have an example for the deadlock
+
 ---
 
 ##### - References:
