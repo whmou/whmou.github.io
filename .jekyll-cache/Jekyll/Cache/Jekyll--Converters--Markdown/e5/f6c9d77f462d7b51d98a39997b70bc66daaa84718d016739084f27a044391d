@@ -1,0 +1,8 @@
+I"*<h4 id="--what">- What:</h4>
+<ol>
+  <li>Used particularly in functional programming languages.</li>
+  <li>Chances to increase performance by not doing the computation until needed.</li>
+  <li>Has book-keeping overhead.</li>
+  <li>May cause deadlock when two lazy value cross referenced.</li>
+</ol>
+:ET
