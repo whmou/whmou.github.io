@@ -7,7 +7,7 @@ title: 2 Hints to Use Lazy Evaluation in Programming
 1. Used particularly in functional programming languages.
 2. Chances to increase performance by not doing the computation until needed.
 3. Has book-keeping overhead.
-4. May cause deadlock when two lazy value cross referenced.
+
 
 #### - When:
 1. You want something to be initialized only once (exmaple below)
@@ -58,7 +58,6 @@ println (y)
 ```
 prints: luka, then doncic then 77.
 
-* ##### Deadlock : [To-Do] Have an example for the deadlock
 
 ---
 
