@@ -21,7 +21,7 @@ println ("luka")
 println (x)
 ```
 prints: doncic, then luka then 77.
-```scala
+``` scala
 lazy val y = { println ("doncic") ; 77 }
 println ("luka")
 println (y)
@@ -47,7 +47,7 @@ class Doncic {
  luka.dribbling()
 ```
 Outputs:
-```
+``` bash
 Hello Basketball
 77
 77
