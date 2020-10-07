@@ -3,8 +3,6 @@ layout: post
 title: 2 Hints to Use Lazy Evaluation in Programming
 ---
 
-# 2 Hints to Use Lazy Evaluation in Programming
-
 #### - What:
 1. Used particularly in functional programming languages.
 2. Chances to increase performance by not doing the computation until needed.
@@ -63,8 +61,8 @@ you know it's going to save sometime when it's applicable.
 ---
 
 ##### - References:
-http://matt.might.net/articles/implementing-laziness/
-https://en.wikipedia.org/wiki/Lazy_evaluation
-https://stackoverflow.com/questions/19955995/when-to-use-lazy-values-in-scala
-https://stackoverflow.com/questions/19469464/do-something-only-once-without-state
-http://twitter.github.io/effectivescala/#Functional%20programming-Laziness
+http://matt.might.net/articles/implementing-laziness/  
+https://en.wikipedia.org/wiki/Lazy_evaluation  
+https://stackoverflow.com/questions/19955995/when-to-use-lazy-values-in-scala  
+https://stackoverflow.com/questions/19469464/do-something-only-once-without-state  
+http://twitter.github.io/effectivescala/#Functional%20programming-Laziness  
