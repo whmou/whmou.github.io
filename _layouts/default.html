@@ -36,6 +36,15 @@
 
     <div id="main" role="main" class="container">
       {{ content }}
+      <hr />
+      List of posts:
+      <ul>
+        {% for post in site.posts %}
+          <li>
+            <a href="{{ post.url }}">{{ post.title }}</a>
+          </li>
+        {% endfor %}
+      </ul>
     </div>
 
     <div class="wrapper-footer">
@@ -47,5 +56,6 @@
     </div>
 
     {% include analytics.html %}
+    
   </body>
 </html>
