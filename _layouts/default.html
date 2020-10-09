@@ -1,4 +1,18 @@
 <!DOCTYPE html>
+<script type="text/javascript">
+
+  // Google Internal Site Search script- By JavaScriptKit.com (http://www.javaScriptKit.com)
+  // For this and over 400+ free scripts, visit JavaScript Kit- http://www.javaScriptKit.com/
+  // This notice must stay intact for use
+  
+  //Enter domain of site to search.
+  var domainroot="whmou.github.io"
+  
+  function Gsitesearch(curobj){
+  curobj.q.value="site:"+domainroot+" "+curobj.qfront.value
+  }
+  
+</script>
 <html>
   <head>
     <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
@@ -16,8 +30,12 @@
   </head>
 
   <body>
+      
+        
     <div class="wrapper-masthead">
+      
       <div class="container">
+        
         <header class="masthead clearfix">
           <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a>
 
@@ -25,12 +43,20 @@
             <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
             <p class="site-description">{{ site.description }}</p>
           </div>
+          
 
           <nav>
             <a href="{{ site.baseurl }}/">Blog</a>
             <a href="{{ site.baseurl }}/about">About</a>
           </nav>
+          
         </header>
+        <form style="text-align:right;" action="http://www.google.com/search" method="get" onSubmit="Gsitesearch(this)">
+          <p>Site Search the Blog:<br />
+          <input name="q" type="hidden" />
+          <input name="qfront" type="text" style="width: 180px" /> <input type="submit" value="Search" /></p>
+          
+          </form>
       </div>
     </div>
 
