@@ -7,7 +7,7 @@ title: 7 Things About Java Fork/Join Framework
 1. Since Java 7, in order to make it easier to write parallel programs, the implementation of the ExecutorService interface.
 2. Using divide and conquer approach to helps you take advantage of multiple processors
 3. Worker threads that run out of things to do can steal tasks from other threads that are still busy.
-4. Abstract `ForkJoinTask` has 2 subclasses: `RecursiveAction` and `RecursiveTask` to use, which run with the `ForkJoinPool`.
+4. Abstract <red_hl>ForkJoinTask</red_hl> has 2 subclasses: <red_hl>RecursiveAction</red_hl> and <red_hl>RecursiveTask</red_hl> to use, which run with the <red_hl>ForkJoinPool</red_hl>.
 
 
 #### - When:
@@ -18,10 +18,10 @@ title: 7 Things About Java Fork/Join Framework
 #### - Notes: 
 1. [RecursiveTask is] A recursive result-bearing ForkJoinTask.
 [RecursiveAction is] A recursive resultless ForkJoinTask.
-2. `ForkJoinPool#commonPool()` is a static thread-pool, which is lazily initialized when it's actually needed and is the default pool.
-3. `Future` and `<Collection>.parallelStream()` can both use `ForkJoinPool`.
-4. `ForkJoinTask` is a task that can be submitted to a ForkJoinPool, while `CompletableFuture` is a promise that can work with "any Executor".
-5. `CompletableFutures` are more appropriate for a Reactive programming model.
+2. <red_hl>ForkJoinPool#commonPool()</red_hl> is a static thread-pool, which is lazily initialized when it's actually needed and is the default pool.
+3. <red_hl>Future</red_hl> and <red_hl>{Collections}.parallelStream()</red_hl> can both use <red_hl>ForkJoinPool</red_hl>.
+4. <red_hl>ForkJoinTask</red_hl> is a task that can be submitted to a ForkJoinPool, while <red_hl>CompletableFuture</red_hl> is a promise that can work with "any Executor".
+5. <red_hl>CompletableFutures</red_hl> are more appropriate for a Reactive programming model.
 6. Its implementation restricts the maximum number of running threads to 32767.
 7. ForkJoinPool fjp = new ForkJoinPool(N); // N can configure the number of threads in the pool.
 
@@ -154,7 +154,7 @@ public class SqrtTransform extends RecursiveAction {
 } 
 ```
 Notes:
-1. RecursiveAction does return a value, it's just always null, so unlike `RecursiveTask`, it doesn't carry the result, usually used on changing the property/item directly.
+1. RecursiveAction does return a value, it's just always null, so unlike <red_hl>RecursiveTask</red_hl>, it doesn't carry the result, usually used on changing the property/item directly.
 
 
 
